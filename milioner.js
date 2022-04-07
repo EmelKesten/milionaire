@@ -757,7 +757,7 @@ const player = {
     currentIndex: 0,
 }
 setInterval(function(){
-    if(player.highScore !== null){
+    if(player.highScore !== undefined){
         if (player.score > player.highScore) {
             localStorage.setItem("highscore", player.score);      
         }
@@ -885,6 +885,7 @@ function newGame(){
     timerWrapper.style.display = 'inline-block';
     sec=0;
     sec2=30;
+    player.score = 100;
 }
 
 function isGameOver(){
