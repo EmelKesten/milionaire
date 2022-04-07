@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milionaire</title>
+    <link rel="stylesheet" href="/milioner.css" />
+  </head>
+  <body>
+    <div class="timer-wrapper">
+      <div id="timer"></div>
+      <div id="ansTimer"></div>
+    </div>
+    <button id="newgame">New Game</button>
+    <div class="head">
+      <img src="/img/logo.png" alt="Who wants to be a Milionaire" />
+    </div>
+    <div class="text">
+      <p>Your question is:</p>
+      <div class="question"></div>
+    </div>
+    <div class="cont">
+      <div class="container">
+        <button class="answer answer1"></button>
+        <button class="answer answer2"></button>
+        <button class="answer answer3"></button>
+        <button class="answer answer4"></button>
+      </div>
+    </div>
+    <div class="scores">
+      <div class="current">
+        <div class="score">Current score:</div>
+        <div id="currentScore">46772$</div>
+      </div>
+      <div class="high">
+        <div class="highScore">Highest score:</div>
+        <div id="highestScore">1,234,567$</div>
+      </div>
+    </div>
+    <div id="lost-wrapper" class="lost-wrapper">
+        <div class="lost">
+            <div id="losing"></div>
+        </div>
+    </div>
+    <div id="win-wrapper" class="win-wrapper">
+      <div class="win">
+        <div id="win"></div>
+      </div>
+    </div>
+    <script src="/milioner.js"></script>
+  </body>
+</html>

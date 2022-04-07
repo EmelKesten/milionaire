@@ -1,0 +1,199 @@
+@media screen and (max-width: 725px){
+    body{
+        background-image: url("/img/wallpaper-mobile.jpg");
+        background-size: cover;
+    }
+    
+}
+
+body{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+#newgame{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background:    #073763;
+    background:    linear-gradient(#20124d, #073763 50%, #20124d);
+    border:        3px solid #f1c232;
+    border-radius: 11px;
+    padding:       5px 5px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          "Open Sans", sans-serif;
+    text-align:    center;
+    z-index: 1;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.head img{
+    width: 30%;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4vw;
+    margin: 40px;
+    margin-top: 0px;
+}
+.cont{
+    margin: 2px;
+    border: 3px solid yellow;
+    background-color: rgba(33, 28, 78, 0.856);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+.answer{
+    background:    #073763;
+    background:    linear-gradient(#20124d, #073763 50%, #20124d);
+    border:        3px solid #f1c232;
+    border-radius: 11px;
+    padding:       20px 45px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
+.scores{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.scores div{
+    margin: 3px;
+}
+.current{
+    background:    #073763;
+    background:    linear-gradient(#20124d, #073763 50%, #20124d);
+    border:        3px solid #f1c232;
+    border-radius: 11px;
+    padding:       5px 25px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          "Open Sans", sans-serif;
+    text-align:    center;
+    width: 35%;
+}
+.high{
+    background:    #073763;
+    background:    linear-gradient(#20124d, #073763 50%, #20124d);
+    border:        3px solid #f1c232;
+    border-radius: 11px;
+    padding:       5px 25px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          "Open Sans", sans-serif;
+    text-align:    center;
+    width: 35%;
+}
+.lost-wrapper{
+    display: none;
+}
+.lost{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#losing{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c12a5;
+    border: 2px solid yellow;
+    border-radius:5%;
+}
+.rightAnswer{
+    border: 4px solid green;
+    color: green;
+}
+.wrongAnswer{
+    border: 4px solid red;
+    color: red;
+}
+.win-wrapper{
+    display: none;
+}
+.win{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#win{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c12a5;
+    border: 2px solid yellow;
+    border-radius:5%;
+}
+.timer-wrapper{
+    position: absolute;
+    top: 10px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
+    color: white;
+    background:    #073763;
+    background:    linear-gradient(#20124d, #073763 50%, #20124d);
+    border:        3px solid #f1c232;
+    border-radius: 11px;
+    padding:       5px 5px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          "Open Sans", sans-serif;
+    text-align:    center;
+}
+@media screen and (min-width: 725px) {
+    body{
+        background-image: url(/img/wallpaper.jpg);
+        background-size: cover;
+    }
+    .head img {
+        width: 15vw;
+    }
+    .text{
+        font-size: 1.5vw;
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .current{
+        width: 15%;
+    }
+    .high{
+        width: 15%;
+    }
+}
