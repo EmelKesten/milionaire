@@ -788,7 +788,7 @@ let sec2 = 30;
 
 newGameBTN.addEventListener('click', newGame);
 document.querySelector('#currentScore').innerHTML = player.score;
-document.querySelector('#highestScore').innerHTML = player.highScore;
+document.querySelector('#highestScore').innerHTML = localStorage.getItem("highscore");
 let executed = false;
 
 function startTimer() {
@@ -842,7 +842,7 @@ btn3.addEventListener('click', ()=> isAnswerRight(btn3))
 btn4.addEventListener('click', ()=> isAnswerRight(btn4))
 
 function isAnswerRight(event){
-    if(event.innerHTML == questions[player.currentIndex].content[questions[player.currentIndex].correct]){ 
+    if(event.innerHTML == questions[player.currentIndex].content[questions[player.currentIndex].correct] ) { 
         player.currentIndex += 1;
         player.score = player.score*2;
         event.classList.add("rightAnswer");
@@ -857,7 +857,7 @@ function isAnswerRight(event){
             btn3.innerHTML = questions[player.currentIndex].content[2];
             btn4.innerHTML = questions[player.currentIndex].content[3];
             document.querySelector('#currentScore').innerHTML = player.score;
-            document.querySelector('#highestScore').innerHTML = player.highScore;
+            document.querySelector('#highestScore').innerHTML = localStorage.getItem("highscore");
             sec2 = 30;
         }, 3000)
     }
@@ -886,6 +886,7 @@ function newGame(){
     sec=0;
     sec2=30;
     player.score = 100;
+    player.currentIndex = 0;
 }
 
 function isGameOver(){
