@@ -737,13 +737,9 @@ function isAnswerRight(event){
             isGameOver()
         }
         if(player.currentIndex > questions[player.difficulty].length-1){
-                nextDifficulty()
-            }
-        
+            nextDifficulty()
+        }
         setTimeout(()=>{
-            
-            //console.log(player.currentIndex)
-            //console.log(player.difficulty)
             question.innerHTML = questions[player.difficulty][player.currentIndex].question
             btn1.innerHTML = questions[player.difficulty][player.currentIndex].answers[0];
             btn2.innerHTML = questions[player.difficulty][player.currentIndex].answers[1];
